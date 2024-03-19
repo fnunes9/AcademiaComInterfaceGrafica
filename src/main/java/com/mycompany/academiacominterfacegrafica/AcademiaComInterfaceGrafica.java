@@ -8,6 +8,12 @@ package com.mycompany.academiacominterfacegrafica;
  *
  * @author fernanda.nunes
  */
-public class ActionListenet {
+import javax.swing.*;
+public class AcademiaComInterfaceGrafica extends JFrame {
+    public static void main(String[] args) {
+        JFrame form=new JFrame("FitTech - Calcule sua mensalidade!" );
+        JButton homem=new JButton("Homem");
+        JButton mulher = new JButton("Mulher");
+    }
     
 }
