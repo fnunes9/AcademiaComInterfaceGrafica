@@ -10,23 +10,25 @@ package com.mycompany.academiacominterfacegrafica;
  */
 import javax.swing.*;
 import java.awt.event.*;
-import java.util.Scanner;
 
 public class AcademiaComInterfaceGrafica extends JFrame {
+    
 
     public static void main(String[] args) {
         JFrame form = new JFrame("FitTech - Calcule sua mensalidade!");
         JButton homem = new JButton("Homem");
         JButton mulher = new JButton("Mulher");
         JSpinner entrada = new JSpinner(new SpinnerNumberModel(0, Integer.MIN_VALUE, Integer.MAX_VALUE, 100));
-        Scanner input2 = new Scanner(System.in);
+        
 
         // Configurando o botão Mensalidade Homem
         homem.setBounds(110, 200, 150, 50);
         homem.setVisible(true);
         homem.addActionListener((ActionEvent e) -> {
+            homem.setText("Digite sua  idade");
             int input = (int) entrada.getValue();
             JOptionPane.showMessageDialog(null, input);
+            
         });
 
         // Configurando o botão Mensalidade Mulher
