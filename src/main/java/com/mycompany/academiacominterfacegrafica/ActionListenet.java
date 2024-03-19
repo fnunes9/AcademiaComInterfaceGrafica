@@ -4,15 +4,10 @@
  */
 package com.mycompany.academiacominterfacegrafica;
 
-import javax.swing.*;
-
 /**
  *
- * @author Fernanda
+ * @author fernanda.nunes
  */
-public class Cliente {
-    public static int Homem(JButton homem){
-        return 0;
-    }
+public class ActionListenet {
     
 }
