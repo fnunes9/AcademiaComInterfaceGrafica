@@ -12,6 +12,7 @@ import javax.swing.*;
  */
 public class Cliente {
     public static int Homem(JButton homem){
+        
         return 0;
     }
     
