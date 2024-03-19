@@ -11,12 +11,13 @@ package com.mycompany.academiacominterfacegrafica;
 import javax.swing.*;
 public class AcademiaComInterfaceGrafica extends JFrame {
     public static void main(String[] args) {
-        JFrame janela = new JFrame ("Teste");
+        JFrame form = new JFrame ("FitTech - Calcule sua mensalidade");
         JPanel painel=new JPanel();
         
-        janela.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        janela.add(painel);
-        janela.setSize(600,400);
-        janela.setVisible(true);
+        form.setBounds(100,200,600,400);
+        form.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        form.add(painel);
+        //form.setSize(600,400);
+        form.setVisible(true);
     }
 }
