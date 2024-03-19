@@ -10,6 +10,7 @@ package com.mycompany.academiacominterfacegrafica;
  */
 import javax.swing.*;
 import java.awt.event.*;
+import java.util.Scanner;
 
 public class AcademiaComInterfaceGrafica extends JFrame {
 
@@ -17,19 +18,23 @@ public class AcademiaComInterfaceGrafica extends JFrame {
         JFrame form = new JFrame("FitTech - Calcule sua mensalidade!"); // Título do programa  
         JButton homem = new JButton("Homem"); // Botão Homem
         JButton mulher = new JButton("Mulher"); // Botão Mulher
+        Scanner entrada = new Scanner(System.in); // Dados a partir do teclado, temporário pois farei com IG
 
         // Configurando o botão Mensalidade Homem
         homem.setBounds(110, 200, 150, 50);
         homem.setVisible(true);
         homem.addActionListener((ActionEvent e) -> {
-            JOptionPane.showMessageDialog(null, "Você clicou no botão Homem!");
+            int idadeHomem = entrada.nextInt();
+            System.out.println(Cliente.CalculaMensalidade(idadeHomem, idadeHomem));
+            JOptionPane.showMessageDialog(null, idadeHomem);
         });
 
         // Configurando o botão Mensalidade Mulher
         mulher.setBounds(110, 260, 150, 50);
         mulher.setVisible(true);
         mulher.addActionListener((ActionEvent e) -> {
-            JOptionPane.showMessageDialog(null, "Você clicou no botão Mulher");
+            int idadeMulher = entrada.nextInt();
+            JOptionPane.showMessageDialog(null, idadeMulher);
         });
 
         //Exibindo a janela
