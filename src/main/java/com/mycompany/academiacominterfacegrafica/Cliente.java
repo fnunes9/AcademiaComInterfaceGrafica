@@ -8,7 +8,7 @@ package com.mycompany.academiacominterfacegrafica;
  * @author Fernanda
  */
 public class Cliente {
-    public static int CalculaMensalidade(int idadeHomem, int idadeMulher){
+    public static float CalculaMensalidade(int idadeHomem, int idadeMulher){
         
         if(idadeHomem <=15 && idadeMulher <=18){
             return 60;

@@ -18,12 +18,12 @@ public class AcademiaComInterfaceGrafica extends JFrame {
     public AcademiaComInterfaceGrafica(){
         homem=new JButton("Homem");
         homem.setBounds(110, 200, 150, 50);
-        homem.setVisible(true);
+       // homem.setVisible(true);
         add(homem);
         
         mulher=new JButton("Mulher");
         mulher.setBounds(110, 260, 150, 50);
-        mulher.setVisible(true);
+        //mulher.setVisible(true);
         add(mulher);
     }
     
@@ -36,6 +36,8 @@ public class AcademiaComInterfaceGrafica extends JFrame {
         form.setBounds(100, 200, 400, 600);
         form.setLayout(null);
         form.setVisible(true);
+        form.setLocationRelativeTo(null);
+        form.setResizable(false);
         form.setDefaultCloseOperation(EXIT_ON_CLOSE);
         form.setTitle("FitTech - Calcule sua mensalidade!");
 
