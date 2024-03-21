@@ -1,2 +1,2 @@
-- Sistema para academia que calcula o valor da mensalidade, tendo como parâmetros sexo e idade. 
+- Sistema para academia que calcula o valor da mensalidade, tendo como parâmetro sexo e idade. 
 - Feito com interface gráfica em JAVA.
