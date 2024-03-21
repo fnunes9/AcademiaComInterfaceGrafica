@@ -1,5 +1,2 @@
-Para lembrar:
-
-CalculaMensalidade tem que ser float; 
-Configurar evento de clique -> mostrar caixa de texto para entrada de INT -> Retornar o valor da mensalidade; 
-Encontrar uma forma de fazer a verificação além do if else.
+- Sistema para academia que calcula o valor da mensalidade, tendo como parâmetros sexo e idade. 
+- Feito com interface gráfica em JAVA.
